@@ -1,12 +1,10 @@
 'use client'
 
-import React, {useEffect} from "react";
+import React from "react";
 import SectionHeading from "@/components/section-heading";
 import {motion} from "framer-motion"
 import {Chip} from "@nextui-org/chip";
 import {skillsData} from "@/lib/data";
-import {useInView} from "react-intersection-observer";
-import {useActiveSectionContext} from "@/app/providers";
 import {useSectionInView} from "@/lib/hooks";
 
 
