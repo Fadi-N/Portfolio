@@ -7,12 +7,17 @@ import {getFormData} from "@/actions/get-form-data";
 import {motion} from "framer-motion";
 import SubmitButton from "@/components/contact-form/submit-button";
 import toast from "react-hot-toast";
+import SendEmailCard from "@/components/contact-form/send-email-card";
+import {useSectionInView} from "@/lib/hooks";
 
 const Contact = () => {
+    const { ref } = useSectionInView("Contact");
+
     return (
         <motion.section
             id="contact"
             className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+            ref={ref}
             initial={{
                 opacity: 0,
             }}

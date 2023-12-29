@@ -5,6 +5,7 @@ import {skillsData} from "@/lib/data";
 import {Chip} from "@nextui-org/chip";
 import {motion} from "framer-motion";
 import React from "react";
+import {useSectionInView} from "@/lib/hooks";
 
 
 const fadeInAnimationVariants = {
@@ -21,8 +22,14 @@ const fadeInAnimationVariants = {
     }),
 };
 const Skills = () => {
+    const {ref} = useSectionInView("Skills", 0.5);
+
     return (
-        <section id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+        <section
+            id="skills"
+            className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+            ref={ref}
+        >
             <SectionHeading>My skills</SectionHeading>
             <div className={"flex flex-wrap justify-center"}>
                 {skillsData.map((skill, index) => (

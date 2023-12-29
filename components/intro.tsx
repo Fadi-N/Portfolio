@@ -5,13 +5,17 @@ import {MdDownload} from "react-icons/md";
 import {HiCursorClick} from "react-icons/hi";
 import {FaGithub, FaLinkedin} from "react-icons/fa";
 import {motion} from "framer-motion"
+import {useSectionInView} from "@/lib/hooks";
 
 
 const Intro = () => {
+    const {ref} = useSectionInView("Home", 0.5);
+
     return (
         <section
             id="home"
             className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+            ref={ref}
         >
             <motion.div
                 className="flex items-center justify-center"

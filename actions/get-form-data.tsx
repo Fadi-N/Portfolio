@@ -2,6 +2,7 @@
 
 import {Resend} from "resend";
 import {validateString} from "@/lib/utils";
+import SendEmailCard from "@/components/contact-form/send-email-card";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -28,9 +29,11 @@ export async function getFormData(formData: FormData) {
             to: ['fadinachawati17@gmail.com'],
             subject: 'Message from portfolio contact form',
             reply_to: senderEmail as string,
-            text: message as string
+            /*text: message as string*/
+            react: <SendEmailCard message={message as string} senderEmail={senderEmail as string} />,
         });
     }catch (error){
+        console.log(error)
         return {
             error: "Failed to send your email! Please, try again later."
         }

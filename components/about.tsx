@@ -1,13 +1,18 @@
 'use client'
 
-import React from "react";
+import React, {useEffect} from "react";
 import SectionHeading from "@/components/section-heading";
 import {motion} from "framer-motion"
 import {Chip} from "@nextui-org/chip";
 import {skillsData} from "@/lib/data";
+import {useInView} from "react-intersection-observer";
+import {useActiveSectionContext} from "@/app/providers";
+import {useSectionInView} from "@/lib/hooks";
 
 
 const About = () => {
+    const {ref} = useSectionInView("About");
+
     return (
         <motion.section
             id="about"
@@ -15,6 +20,7 @@ const About = () => {
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.175}}
+            ref={ref}
         >
             <SectionHeading>About</SectionHeading>
             <p className="mb-3">
@@ -29,7 +35,7 @@ const About = () => {
             </p>
             <div className="my-4">
                 My programming stack includes:
-                {skillsData.map((skill,index) => (
+                {skillsData.map((skill, index) => (
                     <React.Fragment key={index}>
                         <Chip
                             className="mx-1"
