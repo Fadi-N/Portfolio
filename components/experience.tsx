@@ -14,7 +14,7 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="scroll-mt-28 mb-28 sm:mb-40 w-[53rem]"
+            className="scroll-mt-28 mb-28 w-[20rem] sm:mb-40 sm:w-[42rem]"
             ref={ref}
         >
             <SectionHeading>Experience</SectionHeading>
@@ -25,7 +25,6 @@ const Experience = () => {
                             contentStyle={{
                                 boxShadow: "none",
                                 padding: "0",
-                                margin: "0 -1.25rem"
                             }}
                             contentArrowStyle={{
                                 borderRight: "0.4rem solid #E5E7EB",
@@ -33,7 +32,7 @@ const Experience = () => {
                             icon={experience.icon}
                             iconStyle={{
                                 backgroundColor: "white",
-                                boxShadow: "-3px 3px 10px 4px rgba(0, 0, 0, 0.05)"
+                                boxShadow: "-3px 3px 10px 4px rgba(0, 0, 0, 0.05)",
                             }}
                             visible={true}
                         >

@@ -44,7 +44,7 @@ const Skills = () => {
                             custom={index}
                         >
                             <Chip
-                                className="m-1"
+                                className="mx-1 mb-3"
                                 classNames={{
                                     base: "bg-gradient-to-l from-gray-100 to-gray-300 border-small border-gray/50 shadow-gray-500/30",
                                     content: "drop-shadow shadow-black text-black",
