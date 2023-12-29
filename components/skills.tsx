@@ -51,7 +51,6 @@ const Skills = () => {
                                 }}
                                 startContent={skill.icon}
                                 variant="shadow"
-                                size="sm"
                             >{skill.title}</Chip>
                         </motion.div>
                     </React.Fragment>
