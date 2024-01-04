@@ -12,12 +12,13 @@ interface ProjectProps {
     description: string;
     tags: readonly string[];
     url: string;
+    footer: string;
     imageUrl: string;
 }
 
-const Project = ({title, subtitle, description, tags, url, imageUrl}: ProjectProps) => {
+const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: ProjectProps) => {
     const ref = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
+    const {scrollYProgress} = useScroll({
         target: ref,
         offset: ["0 1", "1.33 1"],
     });
@@ -70,14 +71,20 @@ const Project = ({title, subtitle, description, tags, url, imageUrl}: ProjectPro
                     </CardBody>
                     <Divider/>
                     <CardFooter>
-                        <Link
-                            className="text-xs"
-                            isExternal
-                            showAnchorIcon
-                            href="https://github.com/nextui-org/nextui"
-                        >
-                            See source code on GitHub.
-                        </Link>
+                        {footer ? (
+                            <p className="text-xs text-default-400">{footer}</p>
+                            ): (
+                                <Link
+                                    className="text-xs"
+                                    isExternal
+                                    showAnchorIcon
+                                    href={url}
+                                >
+
+                                    See source code on GitHub.
+                                </Link>
+                            )}
+
                     </CardFooter>
                 </Card>
             </section>

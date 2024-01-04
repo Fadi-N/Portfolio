@@ -32,7 +32,7 @@ const Intro = () => {
                 initial={{opacity: 0, y: 100}}
                 animate={{opacity: 1, y: 0}}
             >
-                <span className="font-bold">Hello, I'm Fadi</span>, a <span className="font-bold">Frontend Web Developer</span> with <span className="font-bold">2 years</span> of hands-on experience.
+                <span className="font-bold">Hello, my name is Fadi</span>, a <span className="font-bold">Frontend Web Developer</span> with <span className="font-bold">2 years</span> of hands-on experience.
                 My playground revolves around <span className="underline">React</span> and <span className="underline">Angular</span>, where I create interactive and engaging <span className="italic">websites & apps. </span>
                 Let's build something remarkable together!
             </motion.h1>
