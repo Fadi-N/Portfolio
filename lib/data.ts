@@ -80,6 +80,7 @@ export const projectsData = [
         description: "With a focus on user authentication, I integrated NextAuth.js for seamless login, signup, and OAuth (Google and GitHub). Elevating user experience, I employed react-hot-toast for intuitive notifications and error handling. The app boasts Next.js 13 routing, ensuring smooth navigation. Users can personalize their experience through filtered listings based on preferences, backed by middleware for authentication checks and data validation. Route Handlers (POST, GET, DELETE) facilitate efficient data management. Experience the convenience of reservation and trip functionalities, enabling users to effortlessly book, cancel, and view their trips. Additionally, a \"Favorites\" feature allows users to curate a collection of preferred listings. This project exemplifies my commitment to creating robust, user-friendly applications.",
         tags: ["JavaScript", "React", "Next.JS", "HTML", "Tailwind", "Prisma"],
         url: "https://github.com/Fadi-N/next-js-13-app",
+        footer: "",
         imageUrl: "./rent.png"
     },
     {
@@ -87,6 +88,7 @@ export const projectsData = [
         subtitle: "CONFI",
         description: "Description",
         tags: ["TypeScript", "Angular", "HTML", "CSS", "SCSS", "Bootstrap 5"],
+        url:"",
         footer: "I apologize, but I cannot share the source code due to contractual clauses in my employment agreement.",
         imageUrl: "./confi.png"
     },
@@ -96,6 +98,7 @@ export const projectsData = [
         description: "Description",
         tags: ["TypeScript", "Angular", "HTML", "CSS", "SCSS",],
         url: "",
+        footer: "",
         imageUrl: "./curtain.png"
     },
     {
@@ -104,6 +107,7 @@ export const projectsData = [
         description: "This innovative project streamlines business information retrieval through two search forms, accommodating searches based on NIP or REGON. The user-friendly application demands the input of a specific date for each search, ensuring precise results. Upon form completion and submission, the Ministry of Finance API transforms JSON data into valuable insights, presenting details such as business name, location, and other relevant specifics. This project showcases my proficiency in leveraging technology to create efficient, data-driven solutions that enhance user experiences",
         tags: ["Java", "Spring Boot", "HTML", "CSS", "API"],
         url: "https://github.com/Fadi-N/SearchEngineAPI",
+        footer: "",
         imageUrl: "./api.png"
     }
 ] as const;
