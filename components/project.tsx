@@ -11,12 +11,13 @@ interface ProjectProps {
     subtitle: string;
     description: string;
     tags: readonly string[];
-    url: string;
-    footer: string;
+    url: string | undefined;
+    footer: string | undefined;
     imageUrl: string;
 }
 
 const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: ProjectProps) => {
+    console.log(url)
     const ref = useRef<HTMLDivElement>(null);
     const {scrollYProgress} = useScroll({
         target: ref,
@@ -80,7 +81,6 @@ const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: Pr
                                     showAnchorIcon
                                     href={url}
                                 >
-
                                     See source code on GitHub.
                                 </Link>
                             )}
