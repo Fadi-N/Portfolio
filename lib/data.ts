@@ -70,6 +70,7 @@ export const projectsData = [
         subtitle: "PIM Editor Tool",
         description: "App Creates stunning websites effortlessly. Users experience smooth content creation using the lexical editor from Facebook. Effortlessly add various HTML tags such as buttons, images and links. The backbone of the tool is a JSON object, facilitating the transfer of values. The app is two-way binding. Designed for optimal view previews on different devices, the app provides a responsive experience on screens of different sizes. During the process of content creating, dynamic tabs present the JSON and HTML structure. Import any JSON entity seamlessly and enjoy a live preview of your work.",
         tags: ["JavaScript", "React", "Redux", "HTML", "CSS", "SCSS", "Bootstrap 5", "JSON"],
+        url:"",
         footer: "I apologize, but I cannot share the source code due to contractual clauses in my employment agreement.",
         imageUrl: "./pim.png"
     },

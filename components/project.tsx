@@ -11,8 +11,8 @@ interface ProjectProps {
     subtitle: string;
     description: string;
     tags: readonly string[];
-    url: string | undefined;
-    footer: string | undefined;
+    url: string;
+    footer: string;
     imageUrl: string;
 }
 
