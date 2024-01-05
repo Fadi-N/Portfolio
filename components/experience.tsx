@@ -49,7 +49,7 @@ const Experience = () => {
                                     <>
                                         <Divider/>
                                         <CardBody>
-                                            <span>{experience.description}</span>
+                                            {experience.description}
                                         </CardBody>
 
                                     </>
