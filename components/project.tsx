@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react";
+import React, {ReactNode} from "react";
 import {Chip} from "@nextui-org/chip";
 import {Card, CardBody, CardFooter, CardHeader, Divider, Image, Link} from "@nextui-org/react";
 import {motion, useScroll, useTransform} from "framer-motion"
@@ -9,7 +9,7 @@ import {useRef} from "react";
 interface ProjectProps {
     title: string;
     subtitle: string;
-    description: string;
+    description: ReactNode;
     tags: readonly string[];
     url: string;
     footer: string;
