@@ -24,7 +24,7 @@ const Intro = () => {
             >
                 <Avatar
                     className="w-20 h-20 text-large"
-                    src="./avatar.jpg"
+                    src="./avatar2.jpg"
                 />
             </motion.div>
             <motion.h1
