@@ -6,6 +6,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import React from "react";
 import {Toaster} from "react-hot-toast";
+import {Analytics} from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,6 +36,7 @@ export default function RootLayout({
               position="bottom-right"
               reverseOrder={false}
           />
+          <Analytics />
         </Providers>
       </body>
     </html>
