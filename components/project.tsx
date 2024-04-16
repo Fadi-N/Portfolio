@@ -36,7 +36,7 @@ const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: Pr
             className="group mb-3 sm:mb-8 last:mb-0"
         >
             <section className="mb-8">
-                <Card className="max-w-[500px]">
+                <Card className="max-w-[720px]">
                     <CardHeader className="flex gap-3">
                         <Image
                             className="border border-black p-1"
@@ -53,12 +53,14 @@ const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: Pr
                     </CardHeader>
                     <Divider/>
                     <CardBody>
-                        <p>{description}</p>
-                        <div className="mt-6">
+                        <div className="px-1">
+                            {description}
+                        </div>
+                        <div className="flex flex-wrap items-center mt-3">
                             {tags.map((tag, index) => (
                                 <React.Fragment key={index}>
                                     <Chip
-                                        className="m-1"
+                                        className="m-1 me-0"
                                         classNames={{
                                             base: "bg-gradient-to-l from-gray-700 via-gray-900 to-black border-small border-white/50 shadow-gray-500/30",
                                             content: "drop-shadow shadow-black text-white",
@@ -73,10 +75,10 @@ const Project = ({title, subtitle, description, tags, url, imageUrl, footer}: Pr
                     <Divider/>
                     <CardFooter>
                         {footer ? (
-                            <p className="text-xs text-default-400">{footer}</p>
+                            <p className="text-xs text-default-400 ms-1">{footer}</p>
                             ): (
                                 <Link
-                                    className="text-xs"
+                                    className="text-xs ms-1"
                                     isExternal
                                     showAnchorIcon
                                     href={url}

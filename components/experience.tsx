@@ -14,7 +14,7 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="scroll-mt-28 mb-28 w-[20rem] sm:mb-40 sm:w-[42rem]"
+            className="scroll-mt-28 mb-28 w-[20rem] sm:mb-40 sm:w-[50rem]"
             ref={ref}
         >
             <SectionHeading>Experience</SectionHeading>
@@ -48,7 +48,7 @@ const Experience = () => {
                                 {experience.description && (
                                     <>
                                         <Divider/>
-                                        <CardBody>
+                                        <CardBody className="pt-0">
                                             {experience.description}
                                         </CardBody>
 

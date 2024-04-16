@@ -13,6 +13,7 @@ import SearchApp from "@/components/descriptions/search-app";
 import Portfolio from "@/components/descriptions/portfolio";
 import Confi from "@/components/descriptions/confi";
 import RollingApp from "@/components/descriptions/rolling-app";
+import iphoneWebsite from "@/components/descriptions/iphone-website";
 
 export const links = [
     {
@@ -51,7 +52,7 @@ export const experiencesData = [
     },
     {
         title: "Junior Web Developer",
-        location: "Remote",
+        location: "Schoenberger Germany Enterprises",
         description: React.createElement(WebDeveloper),
         icon: React.createElement(MdOutlineWorkOutline),
         date: "03.2022 - "
@@ -73,6 +74,15 @@ export const experiencesData = [
 ];
 
 export const projectsData = [
+    {
+        title: "3D iPhone Website",
+        subtitle: "3D Model",
+        description: React.createElement(iphoneWebsite),
+        tags: ["JavaScript", "React", "Three.js", "Rect Three Fiber ", "GSAP", "Tailwind"],
+        url: "https://github.com/Fadi-N/iPhone-apple",
+        footer: "",
+        imageUrl: "./3d.png"
+    },
     {
         title: "Product Information Management Editor Tool",
         subtitle: "PIM Editor Tool",
