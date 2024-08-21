@@ -8,7 +8,6 @@ const IphoneWebsite = () => {
             Seamless integration with React.js provides a responsive and intuitive user interface, increasing user engagement and ease of use.
             In addition, GSAP (GreenSock Animation Platform) integration enhances the site with smooth, high-performance animations, making interactions more engaging and visually appealing.
             This combination of technologies provides a smooth, interactive experience as users navigate through iPhone features.
-            Translated with DeepL.com (free version)
         </>
     );
 };
