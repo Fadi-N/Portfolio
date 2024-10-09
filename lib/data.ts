@@ -51,7 +51,7 @@ export const experiencesData = [
         date: "10.2023 - "
     },
     {
-        title: "Junior Web Developer",
+        title: "Web Developer",
         location: "Schoenberger Germany Enterprises",
         description: React.createElement(WebDeveloper),
         icon: React.createElement(MdOutlineWorkOutline),
